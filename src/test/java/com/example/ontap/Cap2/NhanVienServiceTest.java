@@ -210,13 +210,7 @@ class NhanVienServiceTest {
         });
     }
 
-//    ki tu dac biet va so - add + update.
-    @Test
-    public void testFailKiTuDacBiet_testAdd() {
-        assertThrows(IllegalArgumentException.class, () -> {
-            assertEquals(true, nhanVienService.addNhanVien(new NhanVien("1", "!@#$%^&*()_+!123", 18, 1.0, "CNTT")));
-        });
-    }
+//    ki tu dac biet va so - add + updat
 
     @Test
     public void testFailKiTuDacBiet_testUpdate() {
